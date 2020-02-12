@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Table from './components/Table'
+import List from './components/List'
 import data from './assets/data.json'
 
 function App() {
@@ -69,7 +69,7 @@ views: 47227110
 
   return (
     <div className="App">
-			<Table
+			<List
 				columns={columns}
 				data={data}
 			/>

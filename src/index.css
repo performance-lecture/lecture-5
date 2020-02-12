@@ -10,14 +10,20 @@ body {
 .Table {
     width: 100%;
     border-collapse: collapse;
+    display: table;
 }
 
-.Table tr {
-
+.Table .row {
+    display: table-row;
 }
 
-.Table th {
+.Table .column.head {
     border-bottom: 5px solid #555;
+    display: table-cell;
+}
+
+.Table .column {
+    display: table-cell;
 }
 
 .Tag {

@@ -2,7 +2,7 @@ import React from 'react';
 import Tag from './Tag'
 import {zeroPad} from '../helpers'
 
-const TableItem = (props) => {
+const ListBody = (props) => {
 
 	const processItem = (value, type) => {
 		if(type === 'date') {
@@ -26,16 +26,16 @@ const TableItem = (props) => {
 	}
 
 	return (
-		<tr>
+		<div className={'row'}>
 			{props.columns.map((col, index) => {
 				return (
-					<td key={index} style={{border: "1px solid black", padding: '2px', margin: '2px'}}>
+					<span key={index} style={{border: "1px solid black", padding: '2px', margin: '2px'}} className={'column'}>
 						{processItem(props.item[col.key], col.type)}
-					</td>
+					</span>
 				)
 			})}
-		</tr>
+		</div>
 	)
 }
 
-export default TableItem
+export default ListBody
