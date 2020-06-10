@@ -7,22 +7,23 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.Table {
+.List {
+    height: 100vh;
     width: 100%;
     border-collapse: collapse;
     display: table;
 }
 
-.Table .row {
+.List .row {
     display: table-row;
 }
 
-.Table .column.head {
+.List .column.head {
     border-bottom: 5px solid #555;
     display: table-cell;
 }
 
-.Table .column {
+.List .column {
     display: table-cell;
 }
 
